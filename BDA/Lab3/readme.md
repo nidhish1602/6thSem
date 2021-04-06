@@ -33,6 +33,36 @@ WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
 2021-04-05T20:31:37.118+0530    exported 2 records
 ```
 
+6. Drop the table
 ```ruby
-x
+> db.user.drop()
+true
+```
+
+7. Import a given csv dataset from the local file system into mongodb collection.
+```ruby
+.\mongoimport.exe --db student --collection users 'C:\Users\Nidhish Lakhinana\Desktop\info.csv'
+2021-04-06T11:28:36.033+0530    connected to: mongodb://localhost/
+2021-04-06T11:28:36.334+0530    2 document(s) imported successfully. 0 document(s) failed to import.
+```
+
+8. Print the imported CSV file
+```ruby
+> db.getCollection('users').find({}).forEach(printjson)
+{
+        "_id" : ObjectId("606ae33fb67c9a8c34c2ad9c"),
+        "name" : "fem",
+        "rollno" : 11,
+        "age" : 18,
+        "contactno" : 9898989897,
+        "emailid" : "pqr@gmail.com"
+}
+{
+        "_id" : ObjectId("606ae319b67c9a8c34c2ad9b"),
+        "name" : "xyz",
+        "rollno" : 10,
+        "age" : 20,
+        "contactno" : 9898989898,
+        "emailid" : "new@gmail.com"
+}
 ```
