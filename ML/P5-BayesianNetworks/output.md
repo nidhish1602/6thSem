@@ -1,5 +1,6 @@
 Sample instances from the dataset are given below
    age  sex  cp  trestbps  chol  ...  oldpeak  slope  ca  thal  heartdisease
+   
 0   63    1   1       145   233  ...      2.3      3   0     6             0
 1   67    1   4       160   286  ...      1.5      2   3     3             2
 2   67    1   4       120   229  ...      2.6      2   2     7             1
