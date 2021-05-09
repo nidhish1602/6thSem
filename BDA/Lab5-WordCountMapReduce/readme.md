@@ -22,7 +22,7 @@ hadoop-daemon.sh start namenode
 starting namenode, logging to /usr/local/hadoop/logs/hadoop-hadoopusr-namenode-nidhish.out
 ```
 ```ruby
-hadoopusr@nidhish:/usr/local/hadoop/etc/hadoop/share/hadoop/mapreduce$ hadoop-daemon.sh start datanode
+hadoop-daemon.sh start datanode
 starting datanode, logging to /usr/local/hadoop/logs/hadoop-hadoopusr-datanode-nidhish.out
 ```
 ```ruby
@@ -31,7 +31,8 @@ starting nodemanager, logging to /usr/local/hadoop/logs/yarn-hadoopusr-nodemanag
 ```
 ```ruby
 yarn-daemon.sh start resourcemanager
-starting resourcemanager, logging to /usr/local/hadoop/logs/yarn-hadoopusr-resourcemanager-nidhish.out```
+starting resourcemanager, logging to /usr/local/hadoop/logs/yarn-hadoopusr-resourcemanager-nidhish.out
+```
 ```ruby
 jps
 30007 DataNode
