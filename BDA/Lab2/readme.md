@@ -1,6 +1,6 @@
 # Lab 2 (Cassandra)
 
-## Create a employee information database 
+## Create an employee information database 
 
 ```ruby 
 cqlsh> create keyspace employee_info with
