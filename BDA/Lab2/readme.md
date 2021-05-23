@@ -1,4 +1,4 @@
-# Lab 2
+# Lab 2 (Cassandra)
 
 ## Create a employee information database 
 
