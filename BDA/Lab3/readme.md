@@ -1,4 +1,4 @@
-# Lab 3
+# Lab 3 (MongoDB)
 
 1. Create a database “Student” with the following attributes  Rollno, Age, ContactNo, Email-Id.
 ```ruby
