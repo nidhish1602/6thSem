@@ -23,7 +23,7 @@ cqlsh:students> create table student_profile(rollno int primary key,studname
 
 See the table 'student_profile' schema
 ```ruby
-DESCRIBE TABLE student_profile;
+cqlsh:students> DESCRIBE TABLE student_profile;
 
 CREATE TABLE students.student_profile (
     rollno int PRIMARY KEY,
