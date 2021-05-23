@@ -8,12 +8,12 @@ cqlsh> create keyspace students with
 ```
 
 ```ruby
-use students;
+cqlsh> use students;
 ```
  
 Check if the keyspace is created
 ```ruby
-describe keyspaces
+cqlsh:students> describe keyspaces
 ```
 
 ```ruby
