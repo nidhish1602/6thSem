@@ -1,7 +1,7 @@
 # Lab test 1
 
 ### Using MongoDB
-i)Create a mongodb collection Hospital by choosing appropriate attributes
+i) Create a mongodb collection Hospital by choosing appropriate attributes
 ```ruby 
 > use hospital
 switched to db hospital
@@ -44,7 +44,7 @@ iii) List all the documents
         "dept" : "cardiologist"
 }
 ```
-iv)Demonstrate update operation
+iv) Demonstrate update operation
 ```ruby 
 > db.admin.update({phoneno:9849400000}, {$set:{age:21}})
 WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
@@ -105,7 +105,7 @@ cqlsh:company> select * from customer;
           4 |    Mumbai |              Good |       Kartik | 2021-03-31 18:30:00.000000+0000 |      iPhone 11
           3 | Bangalore |              null |      Nidhish | 2021-03-11 18:30:00.000000+0000 |        Pixel 5
 ```
-v)Import an existing csv file into the current column family. (Made a copy of the existing database and added a row)
+v) Import an existing csv file into the current column family. (Made a copy of the existing database and added a row)
 ```ruby 
 cqlsh:company> copy customer (customerid, customername, item_purchased, city, date, customer_feedback) to 'sample.csv';       
 Using 7 child processes
