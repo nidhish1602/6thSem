@@ -1,4 +1,6 @@
-### Average and mean max Temperature 
+### 6. From the following link extract the weather data https://github.com/tomwhite/hadoop-book/tree/master/input/ncdc/all Create a Map Reduce program to
+### a) find average temperature for each year from NCDC data set.
+### b) find the mean max temperature for every month
 
 Switch to hadoop user 
 ```ruby
