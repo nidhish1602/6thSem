@@ -82,7 +82,7 @@ drwxr-xr-x   - hadoopusr supergroup          0 2021-06-14 09:59 /wcinput
 drwxr-xr-x   - hadoopusr supergroup          0 2021-06-14 00:48 /weatherinput
 ```
 7. Creating an input file with text 
-```
+```ruby
 hadoopusr@nidhish:~$ sudo echo "random text" > input.txt 
 [sudo] password for hadoopusr: 
 hadoopusr@nidhish:~$ hadoop fs -put input.txt /wcinput 
@@ -91,7 +91,7 @@ Found 1 items
 -rw-r--r--   1 hadoopusr supergroup         12 2021-06-14 10:04 /wcinput/input.txt
 ```
 8. Running WordCount program 
-```
+```ruby
 hadoopusr@nidhish:~$ cd /usr/local/hadoop/etc/hadoop/share/hadoop/mapreduce
 hadoopusr@nidhish:/usr/local/hadoop/etc/hadoop/share/hadoop/mapreduce$ hadoop jar MapReduceClient.jar wordcount /wcinput /wcoutput  
 21/06/14 10:07:34 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
@@ -165,7 +165,7 @@ hadoopusr@nidhish:/usr/local/hadoop/etc/hadoop/share/hadoop/mapreduce$ hadoop ja
                 Bytes Written=16
 ```
 9. Output
-```
+```ruby
 hadoopusr@nidhish:/usr/local/hadoop/etc/hadoop/share/hadoop/mapreduce$ hadoop fs -ls /wcoutput
 Found 2 items
 -rw-r--r--   1 hadoopusr supergroup          0 2021-06-14 10:07 /wcoutput/_SUCCESS
