@@ -1,3 +1,5 @@
+### Average and mean max Temperature 
+
 Switch to hadoop user 
 ```ruby
 sudo su hadoopusr
